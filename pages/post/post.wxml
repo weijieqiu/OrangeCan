@@ -1,0 +1,35 @@
+<!--pages/post/post.wxml-->
+<!--  Banner start -->
+<view>
+  <swiper indicator-dots="true" autoplay="true" interval="5000">
+    <swiper-item>
+      <image src="/images/post/post-1@text.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/post/post-2@text.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/post/post-3@text.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- Banner end -->
+<!-- post start -->
+<view class="post-container">
+  <view class="post-author-date">
+    <image src="/images/avatar/avatar-5.png"/>
+    <text>Jan 28 2017</text>
+  </view>
+  <text class="post-title">小时候的冰棍儿与雪糕</text>
+  <image class="post-image" src="/images/post/post-4.jpg" />
+  <text class="post-content">冰棍与雪糕绝对不是同一个东西。3 到 5 毛钱的雪糕犹如现在的哈根达斯，而 5 分 1 毛的冰棍儿就像现在的老冰棍。时过境迁, ...</text>
+  <view class="post-like">
+    <image  src="/images/icon/wx_app_collect.png"/>
+    <text>108</text>
+    <image  src="/images/icon/wx_app_view.png"/>
+    <text>92</text>
+    <image  src="/images/icon/wx_app_message.png"/>
+    <text>7</text>
+  </view>
+</view>
+<!-- post end -->
