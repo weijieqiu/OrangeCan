@@ -62,5 +62,19 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onTapJump:function(event){
+    wx.redirectTo({
+      url: '../post/post',
+      success: function(){
+        console.log("from welcome pages to post pages --- jmp success")
+      },
+      fail:function(){
+        console.log("from welcome pages to post pages --- jmp failed")
+      },
+      complete:function(){
+        console.log("from welcome pages to post pages --- jmp complete")
+      }
+    })
   }
 })
