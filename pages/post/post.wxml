@@ -17,6 +17,8 @@
 <!-- post start -->
 <import src="post-item/post-item-tpl.wxml"/>
 <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx" wx:key="idx">
-  <template is="postItemTpl" data="{{...item}}"/>
+  <view catchtap="onTapToDetail" data-post-id="{{item.postId}}">
+    <template is="postItemTpl" data="{{...item}}"/>
+  </view> 
 </block>
 <!-- post end -->

@@ -1,5 +1,7 @@
 // pages/post/post.js
-var dataObj = require("../../data/data.js")
+// var dataObj = require("../../data/data.js")
+// var DBPost = require('../../db/DBPost.js').DBPost;
+import { DBPost } from '../../db/DBPost.js'
 Page({
 
   /**
@@ -13,9 +15,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    
+    var dbPost = new DBPost();
     this.setData({
-      postList: dataObj.postList
+      postList: dbPost.getAllPostData()
     })
   },
 
@@ -23,7 +25,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-
+    
   },
 
   /**
@@ -66,6 +68,12 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+  onTapToDetail: function(event){
+    var postId = event.currentTarget.dataset.postId;
+    wx.navigateTo({
+      url: 'post-detail/post-detail?id=' + postId,
+    })
   }
 
 
