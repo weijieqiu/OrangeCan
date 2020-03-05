@@ -1,7 +1,16 @@
-# 2020-03-03
+# 2020-03-05
+
+- 点赞、收藏功能
+
+  <img src=".\images\screenshot\Snipaste_2020-03-05_19-53-00.png" alt="Snipaste_2020-03-04_15-40-37" style="zoom:75%;" />
+
+# 2020-03-04
+
 - 文章详情页
 
-  <img src=".\images\screenshot\Snipaste_2020-03-04_21-53-15.png" alt="Snipaste_2020-03-04_15-40-37" style="zoom:75%;" />
+<img src=".\images\screenshot\Snipaste_2020-03-04_21-53-15.png" alt="Snipaste_2020-03-04_15-40-37" style="zoom:75%;" />
+
+# 2020-03-03
 
 - 文章列表页
 

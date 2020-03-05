@@ -70,5 +70,27 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  onCollectionTap: function(){
+    var newData = this.dbPost.collect();
+    this.setData({
+      'post.collectionStatus': newData.collectionStatus,
+      'post.collectionNum': newData.collectionNum
+    })
+    wx.showToast({
+      title: newData.collectionStatus? "收藏成功": "取消收藏",
+      duration: 1000,
+      icon: "success",
+      mask: true
+    })
+  },
+
+  onUpTap: function(){
+    var newData = this.dbPost.up();
+    this.setData({
+      'post.upStatus': newData.upStatus,
+      'post.upNum': newData.upNum
+    })
   }
 })
